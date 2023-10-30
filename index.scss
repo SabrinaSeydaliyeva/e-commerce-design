@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+
+  nav {
+    padding: 20px;
+    background: linear-gradient(270deg, #7743db 31.64%, #5725e5 66.78%);
+
+    .nav-text {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      ul {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          list-style-type: none;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    .left-box {
+      width: 48%;
+      // padding: 34px;
+      h2 {
+        margin-bottom: 32px;
+        font-family: Poppins;
+        font-size: 68px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 109%;
+        background: linear-gradient(268deg, #7743db 46.2%, #5725e5 59.09%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        margin-bottom: 32px;
+        color: #000;
+        font-family: Poppins;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 109%;
+      }
+
+      button {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 109%;
+        padding: 10px 24px;
+        border-radius: 25px;
+        border: none;
+        background: linear-gradient(263deg, #7743db 38.81%, #5725e5 70.24%);
+      }
+    }
+  }
+
+  footer {
+    margin: auto;
+    width: 70%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .li-tek {
+        width: 178px;
+        height: 199px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        width: 178px;
+        border-radius: 25px;
+        background: #5725e5;
+        list-style-type: none;
+      }
+        .li-cut {
+          width: 178px;
+          height: 199px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 18px;
+          width: 178px;
+          border-radius: 25px;
+          background: #7743db;
+          list-style-type: none;
+        }
+
+        span {
+          color: #fff;
+          font-family: Poppins;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 109%; /* 19.62px */
+        }
+      }
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+  // For mobile
+  .container {
+    padding: 0;
+    nav {
+      padding: 21px;
+      .nav-text {
+        h1 {
+          font-size: 18px;
+        }
+        ul {
+          li {
+            display: none;
+          }
+        }
+      }
+    }
+
+    main {
+      padding: 0;
+      margin: 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .right-box {
+        img {
+          width: 100%;
+        }
+      }
+
+      .left-box {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 20px;
+        }
+        button {
+          font-size: 20px;
+        }
+      }
+    }
+
+    footer {
+      padding: 10px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+  }
+}
