@@ -109,7 +109,6 @@
 @media screen and (max-width: 800px) {
   .container main .left-box h2 {
     font-size: 40px;
-    text-align: center;
   }
 }
 .container main .left-box p {
@@ -145,30 +144,17 @@
 }
 @media screen and (max-width: 800px) {
   .container main .right-box img {
-    width: 256px;
-    height: 256.511px;
+    width: 100%;
   }
 }
 .container footer {
   margin: auto;
   width: 70%;
 }
-@media screen and (max-width: 800px) {
-  .container footer {
-    padding: 10px;
-  }
-}
 .container footer ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media screen and (max-width: 800px) {
-  .container footer ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
 }
 .container footer ul .li-tek {
   width: 178px;
@@ -205,66 +191,54 @@
   line-height: 109%; /* 19.62px */
 }
 
-/* @media only screen and (max-width: 800px) {
-
+@media only screen and (max-width: 800px) {
   .container {
     padding: 0;
-    nav {
-      padding: 21px;
-      .nav-text {
-        h1 {
-          font-size: 18px;
-        }
-        ul {
-          li {
-            display: none;
-          }
-        }
-      }
-    }
-
-    main {
-      padding: 0;
-      margin: 64px;
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-
-      .right-box {
-        img {
-          width: 100%;
-        }
-      }
-
-      .left-box {
-        padding: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h2 {
-          font-size: 40px;
-        }
-        p {
-          font-size: 20px;
-        }
-        button {
-          font-size: 20px;
-        }
-      }
-    }
-
-    footer {
-      padding: 10px;
-      ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 20px;
-      }
-    }
   }
-} */
+  .container nav {
+    padding: 21px;
+  }
+  .container nav .nav-text h1 {
+    font-size: 18px;
+  }
+  .container nav .nav-text ul li {
+    display: none;
+  }
+  .container main {
+    padding: 0;
+    margin: 64px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .container main .right-box img {
+    width: 100%;
+  }
+  .container main .left-box {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container main .left-box h2 {
+    font-size: 40px;
+  }
+  .container main .left-box p {
+    font-size: 20px;
+  }
+  .container main .left-box button {
+    font-size: 20px;
+  }
+  .container footer {
+    padding: 10px;
+  }
+  .container footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
